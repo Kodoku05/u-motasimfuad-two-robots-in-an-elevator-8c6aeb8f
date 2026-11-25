@@ -9,4 +9,4 @@ if (line.length < 1 || line.length > 200 || line.trim().length === 0) {
 }
 
 mkdirSync("/output", { recursive: true });
-writeFileSync("/output/entry.txt", `${line}\n`, "utf8");
+writeFileSync("/output/entry.txt", line, "utf8");
